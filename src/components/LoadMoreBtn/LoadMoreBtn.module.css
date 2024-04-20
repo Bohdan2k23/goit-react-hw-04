@@ -1,0 +1,20 @@
+.loadMoreBtn {
+  height: 44px;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+
+  border-radius: 8px;
+  background-color: #a44eff;
+  border: none;
+
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loadMoreBtn:hover {
+  transform: scale(1.05);
+  background-color: rgb(152, 108, 255);
+}

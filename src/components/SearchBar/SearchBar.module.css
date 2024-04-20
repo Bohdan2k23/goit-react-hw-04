@@ -1,0 +1,41 @@
+.form {
+  margin: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.formField {
+  width: 360px;
+  padding: 8px 16px;
+
+  border-radius: 24px ;
+  border: 2px solid #a44eff;
+  transition: all 250ms ease-in-out;
+}
+
+.formField:focus-visible,
+.formField:hover {
+  outline: none;
+  border: 1px solid #a44eff;
+}
+
+.searchBtn {
+  height: 42px;
+  padding: 6px 26px 6px 26px;
+
+  background-color: #a44eff;
+  border: none;
+  border-radius: 24px;
+
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.searchBtn:hover {
+  transform: scale(1.05);
+  background-color: rgb(191, 108, 255);
+}

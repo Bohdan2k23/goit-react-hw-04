@@ -1,27 +1,6 @@
 import css from './ImageGallery.module.css';
 import type { ImageData } from "../../lib/types"
-
-type ImageCardProps = {
-  picture: ImageData
-  onClick: (src: string) => void
-}
-
-
-function ImageCard({ picture, onClick }: ImageCardProps) {
-  return (
-    <div>
-      <div className={css.imgCardContainer}>
-        <img
-          onClick={() => onClick(picture.urls.regular)}
-          className={css.imgItem}
-          width={300}
-          src={picture.urls.small}
-          alt={picture.alt_description}
-        />
-      </div>
-    </div>
-  );
-};
+import { ImageCard } from '../ImageCard/ImageCard';
 
 
 type ImageGalleryProps = {
